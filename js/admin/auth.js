@@ -1,5 +1,11 @@
 import { ADMIN_CONFIG } from './config.js';
 
+const MAX_LOGIN_ATTEMPTS = 5;
+const LOCKOUT_MS = 30 * 1000;
+
+let loginAttempts = 0;
+let lockoutUntil = 0;
+
 function hashPassword(password) {
   let hash = 0;
   for (let i = 0; i < password.length; i++) {
@@ -15,9 +21,20 @@ function isAuthenticated() {
 }
 
 function login(password) {
+  const now = Date.now();
+  if (now < lockoutUntil) {
+    return false;
+  }
+
   if (password === ADMIN_CONFIG.password) {
     sessionStorage.setItem('admin_auth', hashPassword(ADMIN_CONFIG.password));
+    loginAttempts = 0;
     return true;
+  }
+
+  loginAttempts += 1;
+  if (loginAttempts >= MAX_LOGIN_ATTEMPTS) {
+    lockoutUntil = now + LOCKOUT_MS;
   }
   return false;
 }
@@ -59,7 +76,13 @@ function initLoginForm() {
       form.reset();
       window.dispatchEvent(new CustomEvent('admin:login'));
     } else {
-      errorEl.textContent = 'Invalid password';
+      const now = Date.now();
+      if (now < lockoutUntil) {
+        const seconds = Math.ceil((lockoutUntil - now) / 1000);
+        errorEl.textContent = `Too many attempts. Try again in ${seconds} seconds.`;
+      } else {
+        errorEl.textContent = 'Invalid password';
+      }
     }
   });
 }

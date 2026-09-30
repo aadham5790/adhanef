@@ -1,3 +1,5 @@
+import { escapeHtml } from './utils.js';
+
 function renderTable(type) {
   const table = document.getElementById(`table-${type}`);
   if (!table) return;
@@ -68,12 +70,6 @@ function renderDashboard() {
   document.getElementById('stat-services').textContent = state.getAll('services').length;
   document.getElementById('stat-projects').textContent = state.getAll('projects').length;
   document.getElementById('stat-blog').textContent = state.getAll('blog').length;
-}
-
-function escapeHtml(str) {
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
 }
 
 const render = {

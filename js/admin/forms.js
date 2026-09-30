@@ -1,3 +1,5 @@
+import { escapeHtml } from './utils.js';
+
 function openModal(title, bodyHtml, onSave) {
   const overlay = document.getElementById('modal-overlay');
   const modalTitle = document.getElementById('modal-title');
@@ -68,13 +70,13 @@ function validateForm(data, container) {
     const errorEl = container.querySelector(`#error-${key}`);
     if (!data[key] || (typeof data[key] === 'string' && !data[key].trim())) {
       valid = false;
-      field.style.borderColor = '#e74c3c';
+      field.classList.add('form-field-error');
       if (errorEl) {
         errorEl.textContent = 'This field is required';
         errorEl.style.display = 'block';
       }
     } else {
-      field.style.borderColor = '';
+      field.classList.remove('form-field-error');
       if (errorEl) errorEl.style.display = 'none';
     }
   });
@@ -133,7 +135,7 @@ function buildServiceForm(item) {
     </div>
     <div class="form-group">
       <label for="field-features">Features (one per line)</label>
-      <textarea id="field-features" data-key="features" rows="4">${(data.features || []).join('\n')}</textarea>
+      <textarea id="field-features" data-key="features" rows="4">${escapeHtml((data.features || []).join('\n'))}</textarea>
     </div>
     <div class="form-group">
       <label for="field-cta">CTA Text</label>
@@ -223,17 +225,7 @@ function buildBlogForm(item) {
   `;
 }
 
-function escapeHtml(str) {
-  if (str == null) return '';
-  return String(str)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
 const forms = {
   openModal,
-  getFormHtml,
-  escapeHtml
+  getFormHtml
 };
