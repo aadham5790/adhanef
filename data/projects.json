@@ -2,81 +2,97 @@
   {
     "id": 1,
     "title": "Maldives Sunset",
+    "slug": "maldives-sunset",
     "category": "photography",
     "subcategory": "landscape",
     "thumb": "assets/images/projects/1-sunset.svg",
     "full": "assets/images/projects/1-sunset.svg",
     "alt": "Sunset over Maldives atoll",
-    "description": "Captured during golden hour across the northern atolls."
+    "description": "Captured during golden hour across the northern atolls.",
+    "content": "<p>Golden hour across the northern atolls brings a different quality of light. The sun drops low, the colors soften, and the ocean takes on a warmth that disappears the moment the sun is gone.</p><p>This project is a collection of those moments: landscapes that only exist for a few minutes each day, and only for a few weeks each year.</p>"
   },
   {
     "id": 2,
     "title": "Ocean Breeze",
+    "slug": "ocean-breeze",
     "category": "photography",
     "subcategory": "landscape",
     "thumb": "assets/images/projects/2-ocean.svg",
     "full": "assets/images/projects/2-ocean.svg",
     "alt": "Crystal clear ocean waters",
-    "description": "A study of light, water, and movement."
+    "description": "A study of light, water, and movement.",
+    "content": "<p>Ocean light is never still. Even when the surface looks calm, there is movement underneath. This project tries to capture that motion without turning it into chaos.</p><p>The best shots came from waiting longer than I expected and moving less than I wanted to.</p>"
   },
   {
     "id": 3,
     "title": "Beach Portrait",
+    "slug": "beach-portrait",
     "category": "photography",
     "subcategory": "portrait",
     "thumb": "assets/images/projects/3-portrait.svg",
     "full": "assets/images/projects/3-portrait.svg",
     "alt": "Portrait on white sand beach",
-    "description": "Natural light portraits by the shore."
+    "description": "Natural light portraits by the shore.",
+    "content": "<p>Natural light on the beach is beautiful and unforgiving. There is no softbox, no reflector, and no second take once the light changes.</p><p>These portraits were made with simple setups: one subject, one direction of light, and a lot of attention to small movements.</p>"
   },
   {
     "id": 4,
     "title": "Automation Pipeline",
+    "slug": "automation-pipeline",
     "category": "experiment",
     "subcategory": "tech",
     "thumb": "assets/images/projects/4-automation.svg",
     "full": "assets/images/projects/4-automation.svg",
     "alt": "Automation pipeline diagram",
-    "description": "Exploring workflow automation from idea to deployed output."
+    "description": "Exploring workflow automation from idea to deployed output.",
+    "content": "<p>This experiment started with a simple question: how much of a repeatable workflow can actually be automated without losing the parts that matter?</p><p>The answer turned out to be most of it, with a few manual checkpoints that make the system worth keeping.</p>"
   },
   {
     "id": 5,
     "title": "Creative Coding Sketch",
+    "slug": "creative-coding-sketch",
     "category": "build",
     "subcategory": "creative",
     "thumb": "assets/images/projects/5-creative.svg",
     "full": "assets/images/projects/5-creative.svg",
     "alt": "Creative coding visual",
-    "description": "Generative experiments blending design and code."
+    "description": "Generative experiments blending design and code.",
+    "content": "<p>Creative coding is not about replacing design decisions. It is about exploring possibilities faster than traditional tools allow.</p><p>These sketches are small systems with rules, and the interesting work happens when the output surprises the person who wrote the rules.</p>"
   },
   {
     "id": 6,
     "title": "Couple Session",
+    "slug": "couple-session",
     "category": "photography",
     "subcategory": "portrait",
     "thumb": "assets/images/projects/6-couple.svg",
     "full": "assets/images/projects/6-couple.svg",
     "alt": "Couple photoshoot on the beach",
-    "description": "Candid moments from a beach session."
+    "description": "Candid moments from a beach session.",
+    "content": "<p>The best moments in couple sessions are rarely the posed ones. They are the in-between glances, the accidental alignment, and the moments when everyone forgets the camera is there.</p><p>This session was built around movement and distance rather than direction and instruction.</p>"
   },
   {
     "id": 7,
     "title": "Island Diary",
+    "slug": "island-diary",
     "category": "photography",
     "subcategory": "visual-journal",
     "thumb": "assets/images/projects/7-island.svg",
     "full": "assets/images/projects/7-island.svg",
     "alt": "Island Diary visual journal across the Maldives",
-    "description": "Island Diary is an ongoing personal project documenting the Maldives through a creator's perspective—not just the postcard version, but the small details that make island life unique. Through photography, short stories, and observations, the project captures landscapes, everyday moments, people, and the changing relationship between island life and technology."
+    "description": "Island Diary is an ongoing personal project documenting the Maldives through a creator's perspective—not just the postcard version, but the small details that make island life unique. Through photography, short stories, and observations, the project captures landscapes, everyday moments, people, and the changing relationship between island life and technology.",
+    "content": "<p>Island Diary is not a tourism project. It is a record of the version of island life that does not fit into postcards: the slow transitions between day and night, the way technology sits beside tradition, and the small decisions that shape daily life.</p><p>The work is ongoing, and it stays personal because that is the only scale at which it still feels honest.</p>"
   },
   {
     "id": 8,
     "title": "Underwater Light",
+    "slug": "underwater-light",
     "category": "photography",
     "subcategory": "landscape",
     "thumb": "assets/images/projects/8-underwater.svg",
     "full": "assets/images/projects/8-underwater.svg",
     "alt": "Underwater photography",
-    "description": "Light studies beneath the surface."
+    "description": "Light studies beneath the surface.",
+    "content": "<p>Underwater light behaves differently than above water. It softens, scatters, and creates its own time-of-day mood regardless of what is happening on the surface.</p><p>This project is a study of those conditions: shallow water, available light, and minimal equipment.</p>"
   }
 ]

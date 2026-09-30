@@ -60,4 +60,44 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://aadham5790.github.io/adhanef/projects/maldives-sunset.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aadham5790.github.io/adhanef/projects/ocean-breeze.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aadham5790.github.io/adhanef/projects/beach-portrait.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aadham5790.github.io/adhanef/projects/automation-pipeline.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aadham5790.github.io/adhanef/projects/creative-coding-sketch.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aadham5790.github.io/adhanef/projects/couple-session.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aadham5790.github.io/adhanef/projects/island-diary.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aadham5790.github.io/adhanef/projects/underwater-light.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
