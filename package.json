@@ -1,0 +1,9 @@
+{
+  "name": "adhanef",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:blog": "node scripts/build-blog.mjs",
+    "build": "npm run build:blog"
+  }
+}

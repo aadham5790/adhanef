@@ -7,7 +7,8 @@
     "excerpt": "Exploring how technology and creativity intersect, and what it means for creators building from small places.",
     "date": "2025-09-20",
     "readTime": "6 min read",
-    "cover": "assets/images/blog/1-future.svg"
+    "cover": "assets/images/blog/1-future.svg",
+    "content": "<p>Technology and creativity are not opposing forces. They are two ways of solving the same problem: how do we make what we imagine real? In the last few years I have become more interested in the space between them, where tools shape ideas and ideas reshape tools.</p><p>Small places matter here. When you do not have a large team or a big budget, you learn to build with constraints. Constraints force decisions. Decisions lead to style. Style becomes voice. That is where creativity starts to feel less like inspiration and more like practice.</p><p>The future I am interested in is not a single platform or trend. It is a mindset: curiosity first, utility second, and willingness to iterate in public.</p>"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "excerpt": "A running log of experiments, failures, and small wins from the workshop.",
     "date": "2025-09-12",
     "readTime": "4 min read",
-    "cover": "assets/images/blog/2-experiment.svg"
+    "cover": "assets/images/blog/2-experiment.svg",
+    "content": "<p>This is not a success journal. It is a working log of things I tested, things that broke, and the small wins that kept me going.</p><p>Last month I tried automating a repetitive content workflow. The first version failed because I optimized too early. The second version failed because I ignored the boring edge cases. The third version worked well enough to keep using.</p><p>The pattern is consistent: failure is not the opposite of progress. It is usually part of the path.</p>"
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "excerpt": "How early starts and quiet mornings shaped my most productive creative sessions.",
     "date": "2025-09-05",
     "readTime": "5 min read",
-    "cover": "assets/images/blog/3-morning.svg"
+    "cover": "assets/images/blog/3-morning.svg",
+    "content": "<p>Morning routines are popular because they are easy to write about. The harder part is showing up when the routine does not feel magical anymore.</p><p>For me, the real benefit of early starts is not extra time. It is the absence of noise. Before messages, before notifications, before the day learns your name, there is a narrow window where thinking is still yours.</p><p>That window is where creative energy lives. The routine is just the door.</p>"
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "excerpt": "A practical rundown of the tools and setups I rely on for building, writing, and shipping ideas.",
     "date": "2025-08-28",
     "readTime": "7 min read",
-    "cover": "assets/images/blog/4-tools.svg"
+    "cover": "assets/images/blog/4-tools.svg",
+    "content": "<p>I do not believe in tool minimalism for its own sake, but I do believe in removing anything that does not earn its place.</p><p>My writing stack is simple: a text editor, a markdown file, and a folder structure that stays the same across projects. For creative experiments, I rely on tools that let me change one variable at a time. For shipping, I prefer boring infrastructure over clever architecture.</p><p>The best tool is the one you stop thinking about.</p>"
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "excerpt": "A few conversations with builders and artists that changed how I think about creativity and technology.",
     "date": "2025-08-15",
     "readTime": "5 min read",
-    "cover": "assets/images/blog/5-conversation.svg"
+    "cover": "assets/images/blog/5-conversation.svg",
+    "content": "<p>A single conversation can rewrite assumptions you did not know you had. I have had a few of those in the last year, and they all shared a pattern: someone asked a question I could not answer immediately.</p><p>One builder asked why I was optimizing instead of learning. One artist asked what would happen if I stopped trying to be original. Those questions turned out to be more useful than most advice.</p><p>If you want to change how you think, stop seeking conclusions. Start seeking better questions.</p>"
   },
   {
     "id": 6,
@@ -57,6 +62,7 @@
     "excerpt": "Practical strategies for moving through creative resistance without waiting for inspiration.",
     "date": "2025-08-01",
     "readTime": "4 min read",
-    "cover": "assets/images/blog/6-creative.svg"
+    "cover": "assets/images/blog/6-creative.svg",
+    "content": "<p>Creative block is not a failure of imagination. It is usually a failure of momentum.</p><p>When I feel stuck, I do something small and physical: organize files, rename folders, clear the desk. It sounds unrelated, but it changes my state from thinker to mover. Once momentum returns, the ideas usually follow.</p><p>The other strategy I use is lowering the stakes. I make something bad on purpose. That removes the pressure of quality and lets me restart from a place of motion instead of hesitation.</p>"
   }
 ]

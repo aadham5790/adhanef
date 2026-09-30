@@ -34,7 +34,7 @@ function renderBlog() {
   const paginated = filtered.slice(start, start + postsPerPage);
 
   grid.innerHTML = paginated.map(post => `
-    <article class="blog-card">
+    <a href="blog/${post.slug}.html" class="blog-card">
       <div class="blog-card-img">
         <img
           src="${post.cover}"
@@ -56,7 +56,7 @@ function renderBlog() {
           <span>${post.readTime}</span>
         </div>
       </div>
-    </article>
+    </a>
   `).join('') || '<p class="empty-state">No posts found.</p>';
 
   renderPagination(totalPages);

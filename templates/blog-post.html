@@ -3,30 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Experiments, builds, conversations, and ideas from Ady Hanef on technology, creativity, and the future.">
-  <meta property="og:title" content="Blog | Ady Hanef">
-  <meta property="og:description" content="Experiments, observations, and conversations on technology, creativity, and ideas.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aadham5790.github.io/adhanef/blog.html">
-  <meta property="og:image" content="https://aadham5790.github.io/adhanef/assets/images/blog/1-future.svg">
+  <meta name="description" content="{{excerpt}}">
+  <meta property="og:title" content="{{title}} | Ady Hanef">
+  <meta property="og:description" content="{{excerpt}}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aadham5790.github.io/adhanef/blog/{{slug}}.html">
+  <meta property="og:image" content="https://aadham5790.github.io/adhanef/{{cover}}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Blog | Ady Hanef">
-  <meta name="twitter:description" content="Experiments, observations, and conversations on technology, creativity, and ideas.">
-  <meta name="twitter:image" content="https://aadham5790.github.io/adhanef/assets/images/blog/1-future.svg">
-  <title>Blog | Ady Hanef</title>
+  <meta name="twitter:title" content="{{title}} | Ady Hanef">
+  <meta name="twitter:description" content="{{excerpt}}">
+  <meta name="twitter:image" content="https://aadham5790.github.io/adhanef/{{cover}}">
+  <link rel="canonical" href="https://aadham5790.github.io/adhanef/blog/{{slug}}.html">
+  <title>{{title}} | Ady Hanef</title>
   <link rel="icon" type="image/png" href="logo nogb.png">
   <link rel="apple-touch-icon" href="logo nogb.png">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/pages/blog.css">
-  <link rel="stylesheet" href="css/utils.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/blog.css">
+  <link rel="stylesheet" href="../css/utils.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="alternate" type="application/rss+xml" title="Ady Hanef Blog" href="../rss.xml">
   <link rel="alternate" type="application/atom+xml" title="Ady Hanef Blog" href="../atom.xml">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{title}}",
+    "description": "{{excerpt}}",
+    "image": "https://aadham5790.github.io/adhanef/{{cover}}",
+    "datePublished": "{{date}}",
+    "author": {
+      "@type": "Person",
+      "name": "Ady Hanef"
+    }
+  }
+  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -50,20 +65,19 @@
       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
     </symbol>
   </svg>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="header">
     <div class="container">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo.jpg" alt="Ady Hanef" class="logo-img">
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/logo.jpg" alt="Ady Hanef" class="logo-img">
         <span>Ady Hanef</span>
       </a>
       <nav class="nav" id="main-nav">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="blog.html" class="active">Blog</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../about.html">About</a>
+        <a href="../blog.html" class="active">Blog</a>
+        <a href="../services.html">Services</a>
+        <a href="../contact.html">Contact</a>
       </nav>
       <button class="menu-toggle" aria-label="Toggle menu">
         <span></span>
@@ -76,48 +90,48 @@
   <main id="main-content">
     <section class="blog-header">
       <div class="container">
-        <h1>Blog</h1>
-        <p>Experiments, observations, and conversations on technology, creativity, and ideas</p>
+        <h1>{{title}}</h1>
+        <p>{{excerpt}}</p>
       </div>
     </section>
 
-    <section class="section">
+    <article class="blog-post">
       <div class="container">
-        <div class="blog-categories">
-          <button class="blog-category-btn active" data-category="all">All</button>
-          <button class="blog-category-btn" data-category="experiment">Experiments</button>
-          <button class="blog-category-btn" data-category="build">Builds</button>
-          <button class="blog-category-btn" data-category="conversation">Conversations</button>
-          <button class="blog-category-btn" data-category="motivation">Motivation</button>
-          <button class="blog-category-btn" data-category="tech">Tech</button>
+        <div class="blog-post-meta">
+          <span class="blog-card-category">{{category}}</span>
+          <span>{{date}}</span>
+          <span>{{readTime}}</span>
         </div>
-        <div class="blog-grid" id="blog-grid"></div>
-        <div class="blog-pagination">
-          <button class="page-btn active" data-page="1">1</button>
-          <button class="page-btn" data-page="2">2</button>
-          <button class="page-btn" data-page="3">3</button>
+        <div class="blog-post-cover">
+          <img src="../{{cover}}" alt="{{title}}" loading="lazy">
+        </div>
+        <div class="blog-post-body">
+          {{content}}
+        </div>
+        <div class="blog-post-nav">
+          <a href="../blog.html" class="btn btn-secondary">&larr; Back to Blog</a>
         </div>
       </div>
-    </section>
+    </article>
   </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-social">
         <a href="https://twitter.com/adhanef" target="_blank" rel="noopener" aria-label="Twitter">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><use href="assets/images/social-icons.svg#icon-twitter"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><use href="../assets/images/social-icons.svg#icon-twitter"/></svg>
         </a>
         <a href="https://www.instagram.com/adhanef/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="assets/images/social-icons.svg#icon-instagram"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="../assets/images/social-icons.svg#icon-instagram"/></svg>
         </a>
         <a href="https://www.youtube.com/channel/UC0Gry0ePJKHM3d2Ajj8yj8w" target="_blank" rel="noopener" aria-label="YouTube">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="assets/images/social-icons.svg#icon-youtube"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="../assets/images/social-icons.svg#icon-youtube"/></svg>
         </a>
         <a href="https://www.tiktok.com/@adhanef" target="_blank" rel="noopener" aria-label="TikTok">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><use href="assets/images/social-icons.svg#icon-tiktok"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><use href="../assets/images/social-icons.svg#icon-tiktok"/></svg>
         </a>
         <a href="https://web.facebook.com/adhanefmv/" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><use href="assets/images/social-icons.svg#icon-facebook"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><use href="../assets/images/social-icons.svg#icon-facebook"/></svg>
         </a>
       </div>
       <div class="footer-links">
@@ -129,13 +143,12 @@
         <a href="../contact.html">Contact</a>
         <a href="../sitemap.xml">Sitemap</a>
       </div>
-      <p class="footer-copy">&copy; <span id="current-year">2025</span> Ady Hanef. Technology · Creativity · Ideas.</p>
+      <p class="footer-copy">&copy; <span id="current-year">2025</span> Ady Hanef. Technology &middot; Creativity &middot; Ideas.</p>
     </div>
   </footer>
 
-  <script src="js/utils.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/blog.js"></script>
+  <script src="../js/utils.js"></script>
+  <script src="../js/main.js"></script>
   <script>
     document.getElementById('current-year').textContent = getCurrentYear();
   </script>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Ady Hanef Blog</title>
+  <link href="https://aadham5790.github.io/adhanef/blog.html"/>
+  <updated>2026-09-30T17:31:14.988Z</updated>
+  <author>
+    <name>Ady Hanef</name>
+  </author>
+  <id>https://aadham5790.github.io/adhanef/blog.html</id>
+  <entry>
+    <title>Technology, Creativity and the Future</title>
+    <link href="https://aadham5790.github.io/adhanef/blog/technology-creativity-future.html"/>
+    <id>https://aadham5790.github.io/adhanef/blog/technology-creativity-future.html</id>
+    <updated>2025-09-20T00:00:00Z</updated>
+    <published>2025-09-20T00:00:00Z</published>
+    <summary><![CDATA[Exploring how technology and creativity intersect, and what it means for creators building from small places.]]></summary>
+    <content type="html"><![CDATA[<p>Technology and creativity are not opposing forces. They are two ways of solving the same problem: how do we make what we imagine real? In the last few years I have become more interested in the space between them, where tools shape ideas and ideas reshape tools.</p><p>Small places matter here. When you do not have a large team or a big budget, you learn to build with constraints. Constraints force decisions. Decisions lead to style. Style becomes voice. That is where creativity starts to feel less like inspiration and more like practice.</p><p>The future I am interested in is not a single platform or trend. It is a mindset: curiosity first, utility second, and willingness to iterate in public.</p>]]></content>
+  </entry>
+  <entry>
+    <title>Building in Public: Experiment Log</title>
+    <link href="https://aadham5790.github.io/adhanef/blog/building-in-public-experiment-log.html"/>
+    <id>https://aadham5790.github.io/adhanef/blog/building-in-public-experiment-log.html</id>
+    <updated>2025-09-12T00:00:00Z</updated>
+    <published>2025-09-12T00:00:00Z</published>
+    <summary><![CDATA[A running log of experiments, failures, and small wins from the workshop.]]></summary>
+    <content type="html"><![CDATA[<p>This is not a success journal. It is a working log of things I tested, things that broke, and the small wins that kept me going.</p><p>Last month I tried automating a repetitive content workflow. The first version failed because I optimized too early. The second version failed because I ignored the boring edge cases. The third version worked well enough to keep using.</p><p>The pattern is consistent: failure is not the opposite of progress. It is usually part of the path.</p>]]></content>
+  </entry>
+  <entry>
+    <title>Morning Routine and Creative Energy</title>
+    <link href="https://aadham5790.github.io/adhanef/blog/morning-routine-creative-energy.html"/>
+    <id>https://aadham5790.github.io/adhanef/blog/morning-routine-creative-energy.html</id>
+    <updated>2025-09-05T00:00:00Z</updated>
+    <published>2025-09-05T00:00:00Z</published>
+    <summary><![CDATA[How early starts and quiet mornings shaped my most productive creative sessions.]]></summary>
+    <content type="html"><![CDATA[<p>Morning routines are popular because they are easy to write about. The harder part is showing up when the routine does not feel magical anymore.</p><p>For me, the real benefit of early starts is not extra time. It is the absence of noise. Before messages, before notifications, before the day learns your name, there is a narrow window where thinking is still yours.</p><p>That window is where creative energy lives. The routine is just the door.</p>]]></content>
+  </entry>
+  <entry>
+    <title>Tools I Actually Use</title>
+    <link href="https://aadham5790.github.io/adhanef/blog/tools-i-actually-use.html"/>
+    <id>https://aadham5790.github.io/adhanef/blog/tools-i-actually-use.html</id>
+    <updated>2025-08-28T00:00:00Z</updated>
+    <published>2025-08-28T00:00:00Z</published>
+    <summary><![CDATA[A practical rundown of the tools and setups I rely on for building, writing, and shipping ideas.]]></summary>
+    <content type="html"><![CDATA[<p>I do not believe in tool minimalism for its own sake, but I do believe in removing anything that does not earn its place.</p><p>My writing stack is simple: a text editor, a markdown file, and a folder structure that stays the same across projects. For creative experiments, I rely on tools that let me change one variable at a time. For shipping, I prefer boring infrastructure over clever architecture.</p><p>The best tool is the one you stop thinking about.</p>]]></content>
+  </entry>
+  <entry>
+    <title>Conversations That Shifted My Thinking</title>
+    <link href="https://aadham5790.github.io/adhanef/blog/conversations-that-shifted-thinking.html"/>
+    <id>https://aadham5790.github.io/adhanef/blog/conversations-that-shifted-thinking.html</id>
+    <updated>2025-08-15T00:00:00Z</updated>
+    <published>2025-08-15T00:00:00Z</published>
+    <summary><![CDATA[A few conversations with builders and artists that changed how I think about creativity and technology.]]></summary>
+    <content type="html"><![CDATA[<p>A single conversation can rewrite assumptions you did not know you had. I have had a few of those in the last year, and they all shared a pattern: someone asked a question I could not answer immediately.</p><p>One builder asked why I was optimizing instead of learning. One artist asked what would happen if I stopped trying to be original. Those questions turned out to be more useful than most advice.</p><p>If you want to change how you think, stop seeking conclusions. Start seeking better questions.</p>]]></content>
+  </entry>
+  <entry>
+    <title>Creative Block and How I Break It</title>
+    <link href="https://aadham5790.github.io/adhanef/blog/creative-block-how-i-break-it.html"/>
+    <id>https://aadham5790.github.io/adhanef/blog/creative-block-how-i-break-it.html</id>
+    <updated>2025-08-01T00:00:00Z</updated>
+    <published>2025-08-01T00:00:00Z</published>
+    <summary><![CDATA[Practical strategies for moving through creative resistance without waiting for inspiration.]]></summary>
+    <content type="html"><![CDATA[<p>Creative block is not a failure of imagination. It is usually a failure of momentum.</p><p>When I feel stuck, I do something small and physical: organize files, rename folders, clear the desk. It sounds unrelated, but it changes my state from thinker to mover. Once momentum returns, the ideas usually follow.</p><p>The other strategy I use is lowering the stakes. I make something bad on purpose. That removes the pressure of quality and lets me restart from a place of motion instead of hesitation.</p>]]></content>
+  </entry>
+</feed>
