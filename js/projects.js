@@ -25,7 +25,16 @@ function renderProjects() {
 
   grid.innerHTML = filteredItems.map((item, index) => `
     <div class="project-item" data-index="${index}" onclick="openLightbox(${index})">
-      <img src="${item.thumb}" alt="${item.alt}" loading="lazy">
+      <img
+        src="${item.thumb}"
+        srcset="${buildSrcSet([
+          { src: item.thumb, width: '600w' },
+          { src: item.full, width: '1200w' }
+        ])}"
+        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
+        alt="${item.alt}"
+        loading="lazy"
+      >
       <div class="project-item-overlay">
         <div>
           <h3>${item.title}</h3>

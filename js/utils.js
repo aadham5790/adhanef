@@ -25,3 +25,16 @@ function throttle(func, limit) {
 function getCurrentYear() {
   return new Date().getFullYear();
 }
+
+function buildSrcSet(entries) {
+  if (!Array.isArray(entries) || entries.length === 0) return '';
+  return entries
+    .filter(entry => entry && entry.src)
+    .map(entry => `${entry.src} ${entry.width || '1x'}`)
+    .join(', ');
+}
+
+function buildSizes(breakpoints) {
+  if (!Array.isArray(breakpoints) || breakpoints.length === 0) return '';
+  return breakpoints.map(bp => `(max-width: ${bp.maxWidth}) ${bp.width}`).join(', ') + ` ${breakpoints[breakpoints.length - 1]?.width || '100vw'}`;
+}

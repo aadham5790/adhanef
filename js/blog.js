@@ -36,7 +36,16 @@ function renderBlog() {
   grid.innerHTML = paginated.map(post => `
     <article class="blog-card">
       <div class="blog-card-img">
-        <img src="${post.cover}" alt="${post.title}" loading="lazy">
+        <img
+          src="${post.cover}"
+          srcset="${buildSrcSet([
+            { src: post.cover, width: '800w' },
+            { src: post.cover, width: '1200w' }
+          ])}"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          alt="${post.title}"
+          loading="lazy"
+        >
       </div>
       <div class="blog-card-body">
         <span class="blog-card-category">${post.category}</span>
