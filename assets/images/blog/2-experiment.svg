@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#1a1a2e"/>
+  <path d="M300 120 L300 280" stroke="#00d4aa" stroke-width="8"/>
+  <path d="M260 180 L300 140 L340 180 L340 260 L260 260 Z" fill="#00d4aa" opacity="0.3"/>
+  <path d="M280 200 L300 160 L320 200 L320 250 L280 250 Z" fill="#00d4aa" opacity="0.5"/>
+  <circle cx="300" cy="300" r="40" fill="none" stroke="#00d4aa" stroke-width="4"/>
+  <text x="400" y="380" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="28" font-weight="600">Building in Public: Experiment Log</text>
+</svg>

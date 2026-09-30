@@ -7,7 +7,7 @@
     "excerpt": "Exploring how technology and creativity intersect, and what it means for creators building from small places.",
     "date": "2025-09-20",
     "readTime": "6 min read",
-    "cover": "https://via.placeholder.com/800x450/1a1a2e/00d4aa?text=Future"
+    "cover": "assets/images/blog/1-future.svg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "excerpt": "A running log of experiments, failures, and small wins from the workshop.",
     "date": "2025-09-12",
     "readTime": "4 min read",
-    "cover": "https://via.placeholder.com/800x450/1a1a2e/00d4aa?text=Experiment"
+    "cover": "assets/images/blog/2-experiment.svg"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "excerpt": "How early starts and quiet mornings shaped my most productive creative sessions.",
     "date": "2025-09-05",
     "readTime": "5 min read",
-    "cover": "https://via.placeholder.com/800x450/1a1a2e/00d4aa?text=Morning"
+    "cover": "assets/images/blog/3-morning.svg"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "excerpt": "A practical rundown of the tools and setups I rely on for building, writing, and shipping ideas.",
     "date": "2025-08-28",
     "readTime": "7 min read",
-    "cover": "https://via.placeholder.com/800x450/1a1a2e/00d4aa?text=Tools"
+    "cover": "assets/images/blog/4-tools.svg"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "excerpt": "A few conversations with builders and artists that changed how I think about creativity and technology.",
     "date": "2025-08-15",
     "readTime": "5 min read",
-    "cover": "https://via.placeholder.com/800x450/1a1a2e/00d4aa?text=Conversation"
+    "cover": "assets/images/blog/5-conversation.svg"
   },
   {
     "id": 6,
@@ -57,6 +57,6 @@
     "excerpt": "Practical strategies for moving through creative resistance without waiting for inspiration.",
     "date": "2025-08-01",
     "readTime": "4 min read",
-    "cover": "https://via.placeholder.com/800x450/1a1a2e/00d4aa?text=Creative"
+    "cover": "assets/images/blog/6-creative.svg"
   }
 ]

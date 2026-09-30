@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#1a1a2e"/>
+  <path d="M300 200 Q350 150 400 200 Q350 250 300 200" fill="#00d4aa" opacity="0.6"/>
+  <path d="M200 300 Q250 250 300 300 Q250 350 200 300" fill="#00d4aa" opacity="0.5"/>
+  <path d="M400 350 Q450 300 500 350 Q450 400 400 350" fill="#00d4aa" opacity="0.4"/>
+  <circle cx="300" cy="250" r="30" fill="none" stroke="#00d4aa" stroke-width="4"/>
+  <text x="300" y="520" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="24" font-weight="600">Underwater Light</text>
+</svg>

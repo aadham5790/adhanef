@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#1a1a2e"/>
+  <path d="M0 350 Q100 300 200 350 T400 350 T600 350 V600 H0 Z" fill="#00d4aa" opacity="0.4"/>
+  <path d="M0 400 Q150 350 300 400 T600 400 V600 H0 Z" fill="#00d4aa" opacity="0.6"/>
+  <circle cx="450" cy="150" r="60" fill="#00d4aa" opacity="0.8"/>
+  <text x="300" y="520" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="24" font-weight="600">Ocean Breeze</text>
+</svg>

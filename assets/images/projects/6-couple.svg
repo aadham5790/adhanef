@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#1a1a2e"/>
+  <circle cx="240" cy="220" r="50" fill="#00d4aa" opacity="0.6"/>
+  <circle cx="360" cy="220" r="50" fill="#00d4aa" opacity="0.6"/>
+  <path d="M220 300 Q300 360 380 300" fill="none" stroke="#00d4aa" stroke-width="4"/>
+  <text x="300" y="520" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="24" font-weight="600">Couple Session</text>
+</svg>
