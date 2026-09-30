@@ -1,4 +1,4 @@
-const ADMIN_PASSWORD = 'admin123';
+import { ADMIN_CONFIG } from './config.js';
 
 function hashPassword(password) {
   let hash = 0;
@@ -11,12 +11,12 @@ function hashPassword(password) {
 }
 
 function isAuthenticated() {
-  return sessionStorage.getItem('admin_auth') === hashPassword(ADMIN_PASSWORD);
+  return sessionStorage.getItem('admin_auth') === hashPassword(ADMIN_CONFIG.password);
 }
 
 function login(password) {
-  if (password === ADMIN_PASSWORD) {
-    sessionStorage.setItem('admin_auth', hashPassword(ADMIN_PASSWORD));
+  if (password === ADMIN_CONFIG.password) {
+    sessionStorage.setItem('admin_auth', hashPassword(ADMIN_CONFIG.password));
     return true;
   }
   return false;

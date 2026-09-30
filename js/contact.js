@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
+  const inputs = form.querySelectorAll('input, textarea, select');
+  inputs.forEach(input => {
+    input.addEventListener('blur', () => validateField(input));
+    input.addEventListener('input', () => {
+      const group = input.closest('.form-group');
+      if (group && group.classList.contains('error')) {
+        validateField(input);
+      }
+    });
+  });
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -23,38 +34,49 @@ document.addEventListener('DOMContentLoaded', () => {
       if (response.ok) {
         showToast('Message sent successfully!', 'success');
         form.reset();
+        inputs.forEach(input => input.closest('.form-group')?.classList.remove('error'));
       } else {
         showToast('Message sent! I will get back to you soon.', 'success');
         form.reset();
+        inputs.forEach(input => input.closest('.form-group')?.classList.remove('error'));
       }
     } catch (error) {
       showToast('Message sent! I will get back to you soon.', 'success');
       form.reset();
+      inputs.forEach(input => input.closest('.form-group')?.classList.remove('error'));
     }
   });
 });
+
+function validateField(input) {
+  const group = input.closest('.form-group');
+  if (!group) return true;
+
+  if (input.hasAttribute('required') && !input.value.trim()) {
+    group.classList.add('error');
+    return false;
+  } else if (input.type === 'email' && input.value.trim()) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(input.value.trim())) {
+      group.classList.add('error');
+      return false;
+    } else {
+      group.classList.remove('error');
+      return true;
+    }
+  } else {
+    group.classList.remove('error');
+    return true;
+  }
+}
 
 function validateForm(form) {
   let isValid = true;
   const inputs = form.querySelectorAll('input, textarea, select');
 
   inputs.forEach(input => {
-    const group = input.closest('.form-group');
-    if (!group) return;
-
-    if (input.hasAttribute('required') && !input.value.trim()) {
-      group.classList.add('error');
+    if (!validateField(input)) {
       isValid = false;
-    } else if (input.type === 'email' && input.value.trim()) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(input.value.trim())) {
-        group.classList.add('error');
-        isValid = false;
-      } else {
-        group.classList.remove('error');
-      }
-    } else {
-      group.classList.remove('error');
     }
   });
 
