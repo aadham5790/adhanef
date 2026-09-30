@@ -25,4 +25,11 @@
   --transition: 220ms ease;
   --container: 1200px;
   --header-h: 72px;
+  --overlay-strong: rgba(10, 10, 15, 0.95);
+  --overlay-medium: rgba(10, 10, 15, 0.8);
+  --overlay-subtle: rgba(10, 10, 15, 0.5);
+  --error: #ff6b6b;
+  --success: #27ae60;
+  --danger: #e74c3c;
+  --danger-hover: #c0392b;
 }

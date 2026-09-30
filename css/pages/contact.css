@@ -73,7 +73,7 @@
 }
 
 .form-group .error {
-  color: #ff6b6b;
+  color: var(--error);
   font-size: 0.8125rem;
   margin-top: 0.25rem;
   display: none;
@@ -85,7 +85,7 @@
 
 .form-group.error input,
 .form-group.error textarea {
-  border-color: #ff6b6b;
+  border-color: var(--error);
 }
 
 .contact-info {

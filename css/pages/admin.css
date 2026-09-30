@@ -58,7 +58,7 @@
 }
 
 .login-error {
-  color: #e74c3c;
+  color: var(--error);
   font-size: 14px;
   margin-top: 12px;
   min-height: 20px;
@@ -134,7 +134,7 @@
 
 .nav-item.active {
   background: var(--primary);
-  color: #fff;
+  color: var(--bg-primary);
 }
 
 .admin-footer {
@@ -263,7 +263,7 @@
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--overlay-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -392,7 +392,7 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 14px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-md);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -403,11 +403,11 @@
 }
 
 .toast.success {
-  border-left: 4px solid #27ae60;
+  border-left: 4px solid var(--success);
 }
 
 .toast.error {
-  border-left: 4px solid #e74c3c;
+  border-left: 4px solid var(--error);
 }
 
 @keyframes slideIn {
@@ -449,12 +449,12 @@
 }
 
 .btn-danger {
-  background: #e74c3c;
-  color: #fff;
-  border: 1px solid #e74c3c;
+  background: var(--danger);
+  color: var(--bg-primary);
+  border: 1px solid var(--danger);
 }
 
 .btn-danger:hover {
-  background: #c0392b;
-  border-color: #c0392b;
+  background: var(--danger-hover);
+  border-color: var(--danger-hover);
 }

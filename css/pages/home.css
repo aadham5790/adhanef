@@ -51,43 +51,6 @@
   flex-wrap: wrap;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.875rem 2rem;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  border-radius: var(--radius-md);
-  transition: all var(--transition);
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: var(--accent);
-  color: var(--bg-primary);
-}
-
-.btn-primary:hover {
-  background: var(--accent-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 229, 191, 0.25);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--fg-primary);
-  border: 1px solid var(--border-light);
-}
-
-.btn-secondary:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
 .scroll-indicator {
   position: absolute;
   bottom: 2rem;

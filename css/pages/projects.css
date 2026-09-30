@@ -76,7 +76,7 @@
 .project-item-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10, 10, 15, 0.8), transparent 60%);
+  background: linear-gradient(to top, var(--overlay-medium), transparent 60%);
   opacity: 0;
   transition: opacity var(--transition);
   display: flex;
@@ -103,7 +103,7 @@
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(10, 10, 15, 0.95);
+  background: var(--overlay-strong);
   z-index: 2000;
   display: none;
   align-items: center;
@@ -184,7 +184,7 @@
 
   .project-item-overlay {
     opacity: 1;
-    background: linear-gradient(to top, rgba(10, 10, 15, 0.9), transparent 50%);
+    background: linear-gradient(to top, var(--overlay-medium), transparent 50%);
   }
 
   .lightbox-prev { left: 0.5rem; }

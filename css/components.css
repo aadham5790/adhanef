@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   height: var(--header-h);
-  background: rgba(10, 10, 15, 0.85);
+  background: var(--overlay-medium);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
