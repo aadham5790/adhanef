@@ -1,0 +1,60 @@
+[
+  {
+    "id": "consulting",
+    "name": "Tech Consulting",
+    "price": 300,
+    "currency": "USD",
+    "unit": "hour",
+    "features": [
+      "Architecture and tooling review",
+      "Automation and workflow design",
+      "Technical mentorship and advisory",
+      "Remote sessions available"
+    ],
+    "cta": "Inquire",
+    "popular": false
+  },
+  {
+    "id": "workshop",
+    "name": "Creative Workshop",
+    "price": 500,
+    "currency": "USD",
+    "unit": "session",
+    "features": [
+      "Ideation and prototyping",
+      "Hands-on creative process",
+      "Group or 1:1 formats",
+      "In-person in Maldives or remote"
+    ],
+    "cta": "Book",
+    "popular": true
+  },
+  {
+    "id": "digital",
+    "name": "Digital Products",
+    "price": 0,
+    "currency": "USD",
+    "unit": "varies",
+    "features": [
+      "Courses and tutorials",
+      "Templates and tools",
+      "Built with curiosity and utility in mind"
+    ],
+    "cta": "Explore",
+    "popular": false
+  },
+  {
+    "id": "speaking",
+    "name": "Speaking & Advisory",
+    "price": 0,
+    "currency": "USD",
+    "unit": "custom",
+    "features": [
+      "Conferences and events",
+      "Podcasts and interviews",
+      "Brand and creative advisory"
+    ],
+    "cta": "Contact",
+    "popular": false
+  }
+]

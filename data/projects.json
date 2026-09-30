@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Maldives Sunset",
+    "category": "photography",
+    "subcategory": "landscape",
+    "thumb": "https://via.placeholder.com/600x600/1a1a2e/00d4aa?text=Sunset",
+    "full": "https://via.placeholder.com/1200x1200/1a1a2e/00d4aa?text=Sunset",
+    "alt": "Sunset over Maldives atoll",
+    "description": "Captured during golden hour across the northern atolls."
+  },
+  {
+    "id": 2,
+    "title": "Ocean Breeze",
+    "category": "photography",
+    "subcategory": "landscape",
+    "thumb": "https://via.placeholder.com/600x600/1a1a2e/00d4aa?text=Ocean",
+    "full": "https://via.placeholder.com/1200x1200/1a1a2e/00d4aa?text=Ocean",
+    "alt": "Crystal clear ocean waters",
+    "description": "A study of light, water, and movement."
+  },
+  {
+    "id": 3,
+    "title": "Beach Portrait",
+    "category": "photography",
+    "subcategory": "portrait",
+    "thumb": "https://via.placeholder.com/600x600/1a1a2e/00d4aa?text=Portrait",
+    "full": "https://via.placeholder.com/1200x1200/1a1a2e/00d4aa?text=Portrait",
+    "alt": "Portrait on white sand beach",
+    "description": "Natural light portraits by the shore."
+  },
+  {
+    "id": 4,
+    "title": "Automation Pipeline",
+    "category": "experiment",
+    "subcategory": "tech",
+    "thumb": "https://via.placeholder.com/600x600/1a1a2e/00d4aa?text=Automation",
+    "full": "https://via.placeholder.com/1200x1200/1a1a2e/00d4aa?text=Automation",
+    "alt": "Automation pipeline diagram",
+    "description": "Exploring workflow automation from idea to deployed output."
+  },
+  {
+    "id": 5,
+    "title": "Creative Coding Sketch",
+    "category": "build",
+    "subcategory": "creative",
+    "thumb": "https://via.placeholder.com/600x600/1a1a2e/00d4aa?text=Creative",
+    "full": "https://via.placeholder.com/1200x1200/1a1a2e/00d4aa?text=Creative",
+    "alt": "Creative coding visual",
+    "description": "Generative experiments blending design and code."
+  },
+  {
+    "id": 6,
+    "title": "Couple Session",
+    "category": "photography",
+    "subcategory": "portrait",
+    "thumb": "https://via.placeholder.com/600x600/1a1a2e/00d4aa?text=Couple",
+    "full": "https://via.placeholder.com/1200x1200/1a1a2e/00d4aa?text=Couple",
+    "alt": "Couple photoshoot on the beach",
+    "description": "Candid moments from a beach session."
+  },
+  {
+    "id": 7,
+    "title": "Island Diary",
+    "category": "photography",
+    "subcategory": "visual-journal",
+    "thumb": "https://via.placeholder.com/600x600/1a1a2e/00d4aa?text=Island+Diary",
+    "full": "https://via.placeholder.com/1200x1200/1a1a2e/00d4aa?text=Island+Diary",
+    "alt": "Island Diary visual journal across the Maldives",
+    "description": "Island Diary is an ongoing personal project documenting the Maldives through a creator's perspective—not just the postcard version, but the small details that make island life unique. Through photography, short stories, and observations, the project captures landscapes, everyday moments, people, and the changing relationship between island life and technology."
+  },
+  {
+    "id": 8,
+    "title": "Underwater Light",
+    "category": "photography",
+    "subcategory": "landscape",
+    "thumb": "https://via.placeholder.com/600x600/1a1a2e/00d4aa?text=Underwater",
+    "full": "https://via.placeholder.com/1200x1200/1a1a2e/00d4aa?text=Underwater",
+    "alt": "Underwater photography",
+    "description": "Light studies beneath the surface."
+  }
+]
