@@ -23,7 +23,9 @@ function renderBlog() {
 
   grid.innerHTML = filtered.map(post => `
     <article class="blog-card">
-      <div class="blog-card-img">Image Placeholder</div>
+      <div class="blog-card-img">
+        <img src="${post.cover}" alt="${post.title}" loading="lazy">
+      </div>
       <div class="blog-card-body">
         <span class="blog-card-category">${post.category}</span>
         <h3>${post.title}</h3>

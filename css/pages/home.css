@@ -211,6 +211,12 @@
   font-size: 0.875rem;
 }
 
+.blog-preview-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .blog-preview-card-body {
   padding: 1.5rem;
 }
