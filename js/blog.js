@@ -1,6 +1,8 @@
 // Blog JavaScript
 let blogData = [];
 let currentCategory = 'all';
+let currentPage = 1;
+const postsPerPage = 3;
 
 document.addEventListener('DOMContentLoaded', async () => {
   try {
@@ -8,20 +10,30 @@ document.addEventListener('DOMContentLoaded', async () => {
     blogData = await response.json();
     renderBlog();
     initBlogFilters();
+    initPagination();
   } catch (error) {
     console.error('Failed to load blog data:', error);
   }
 });
 
+function getFilteredPosts() {
+  return currentCategory === 'all'
+    ? blogData
+    : blogData.filter(post => post.category === currentCategory);
+}
+
 function renderBlog() {
   const grid = document.getElementById('blog-grid');
   if (!grid) return;
 
-  const filtered = currentCategory === 'all'
-    ? blogData
-    : blogData.filter(post => post.category === currentCategory);
+  const filtered = getFilteredPosts();
+  const totalPages = Math.max(1, Math.ceil(filtered.length / postsPerPage));
+  currentPage = Math.min(currentPage, totalPages);
 
-  grid.innerHTML = filtered.map(post => `
+  const start = (currentPage - 1) * postsPerPage;
+  const paginated = filtered.slice(start, start + postsPerPage);
+
+  grid.innerHTML = paginated.map(post => `
     <article class="blog-card">
       <div class="blog-card-img">
         <img src="${post.cover}" alt="${post.title}" loading="lazy">
@@ -36,7 +48,9 @@ function renderBlog() {
         </div>
       </div>
     </article>
-  `).join('');
+  `).join('') || '<p class="empty-state">No posts found.</p>';
+
+  renderPagination(totalPages);
 }
 
 function initBlogFilters() {
@@ -46,8 +60,32 @@ function initBlogFilters() {
       buttons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentCategory = btn.dataset.category;
+      currentPage = 1;
       renderBlog();
     });
+  });
+}
+
+function initPagination() {
+  document.querySelectorAll('.page-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const page = Number(btn.dataset.page);
+      if (!Number.isNaN(page)) {
+        currentPage = page;
+        renderBlog();
+      }
+    });
+  });
+}
+
+function renderPagination(totalPages) {
+  const buttons = document.querySelectorAll('.page-btn');
+  if (!buttons.length) return;
+
+  buttons.forEach(btn => {
+    const page = Number(btn.dataset.page);
+    btn.classList.toggle('active', page === currentPage);
+    btn.disabled = page === currentPage;
   });
 }
 

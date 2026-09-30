@@ -1,3 +1,10 @@
+:root {
+  --bg: var(--bg-primary);
+  --text: var(--fg-primary);
+  --text-muted: var(--fg-muted);
+  --primary: var(--accent);
+}
+
 .login-screen {
   display: flex;
   align-items: center;

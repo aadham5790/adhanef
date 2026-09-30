@@ -10,6 +10,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (nav && nav.classList.contains('open')) {
+      const isMenuButton = e.target.closest('.menu-toggle');
+      const isNav = e.target.closest('.nav');
+      if (!isMenuButton && !isNav) {
+        nav.classList.remove('open');
+      }
+    }
+  });
+
   // Active nav link
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('.nav a');
