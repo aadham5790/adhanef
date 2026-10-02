@@ -1,5 +1,3 @@
-import { escapeHtml } from './utils.js';
-
 function openModal(title, bodyHtml, onSave) {
   const overlay = document.getElementById('modal-overlay');
   const modalTitle = document.getElementById('modal-title');
@@ -65,10 +63,12 @@ function validateForm(data, container) {
   const required = container.querySelectorAll('[required]');
   let valid = true;
 
-  required.forEach(field => {
-    const key = field.dataset.key;
-    const errorEl = container.querySelector(`#error-${key}`);
-    if (!data[key] || (typeof data[key] === 'string' && !data[key].trim())) {
+    required.forEach(field => {
+      const key = field.dataset.key;
+      const errorEl = container.querySelector(`#error-${key}`);
+      const value = data[key];
+      // Note: `!value` would reject a valid 0 (e.g. free services).
+      if (value === undefined || value === null || (typeof value === 'string' && !value.trim())) {
       valid = false;
       field.classList.add('form-field-error');
       if (errorEl) {

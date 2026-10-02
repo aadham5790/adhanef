@@ -1,5 +1,3 @@
-import { ADMIN_CONFIG } from './config.js';
-
 const MAX_LOGIN_ATTEMPTS = 5;
 const LOCKOUT_MS = 30 * 1000;
 

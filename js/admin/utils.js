@@ -1,5 +1,5 @@
 // Shared admin utilities
-export function escapeHtml(str) {
+function escapeHtml(str) {
   if (str == null) return '';
   return String(str)
     .replace(/&/g, '&amp;')

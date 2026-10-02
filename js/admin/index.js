@@ -18,9 +18,8 @@ function setupAdmin() {
       window.location.reload();
     });
 
-    document.querySelectorAll('[data-action]').forEach(btn => {
-      btn.addEventListener('click', handleAction);
-    });
+    // Delegate: row action buttons are re-created by renderTable(), so bind once on the container.
+    document.getElementById('admin-panel').addEventListener('click', handleAction);
 
     document.getElementById('download-all-btn').addEventListener('click', exportApi.downloadAll);
   });
@@ -51,8 +50,10 @@ function showSection(sectionId) {
 }
 
 function handleAction(e) {
-  const action = e.target.dataset.action;
-  const type = e.target.dataset.type;
+  const trigger = e.target.closest('[data-action]');
+  if (!trigger) return;
+  const action = trigger.dataset.action;
+  const type = trigger.dataset.type;
 
   switch (action) {
     case 'create':
@@ -67,7 +68,7 @@ function handleAction(e) {
       break;
 
     case 'edit':
-      const id = e.target.dataset.id;
+      const id = trigger.dataset.id;
       const item = state.getById(type, id);
       if (item) {
         forms.openModal(`Edit ${type.slice(0, -1)}`, forms.getFormHtml(type, item), (data) => {
@@ -81,7 +82,7 @@ function handleAction(e) {
 
     case 'delete':
       if (confirm(`Are you sure you want to delete this ${type.slice(0, -1)}?`)) {
-        state.remove(type, e.target.dataset.id);
+        state.remove(type, trigger.dataset.id);
         showToast(`${type.slice(0, -1)} deleted`, 'success');
         render.renderTable(type);
         render.renderDashboard();

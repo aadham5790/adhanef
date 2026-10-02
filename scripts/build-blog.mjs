@@ -9,6 +9,7 @@ const templatesDir = path.join(root, 'templates');
 const blogDir = path.join(root, 'blog');
 
 const posts = JSON.parse(fs.readFileSync(path.join(dataDir, 'blog.json'), 'utf8'));
+const projects = JSON.parse(fs.readFileSync(path.join(dataDir, 'projects.json'), 'utf8'));
 
 if (!fs.existsSync(blogDir)) fs.mkdirSync(blogDir, { recursive: true });
 
@@ -42,7 +43,10 @@ const staticPages = [
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...staticPages, ...posts.map(post => ({ url: `${siteUrl}/blog/${post.slug}.html`, priority: '0.7', changefreq: 'weekly' }))].map(item => `  <url>
+${[...staticPages,
+  ...posts.map(post => ({ url: `${siteUrl}/blog/${post.slug}.html`, priority: '0.7', changefreq: 'weekly' })),
+  ...projects.map(project => ({ url: `${siteUrl}/projects/${project.slug}.html`, priority: '0.7', changefreq: 'weekly' }))
+].map(item => `  <url>
     <loc>${item.url}</loc>
     <changefreq>${item.changefreq}</changefreq>
     <priority>${item.priority}</priority>

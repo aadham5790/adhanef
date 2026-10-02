@@ -1,5 +1,3 @@
-import { escapeHtml } from './utils.js';
-
 function renderTable(type) {
   const table = document.getElementById(`table-${type}`);
   if (!table) return;

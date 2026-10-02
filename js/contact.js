@@ -36,14 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reset();
         inputs.forEach(input => input.closest('.form-group')?.classList.remove('error'));
       } else {
-        showToast('Message sent! I will get back to you soon.', 'success');
-        form.reset();
-        inputs.forEach(input => input.closest('.form-group')?.classList.remove('error'));
+        // Keep the form content so the user can retry.
+        showToast(`Could not send your message (HTTP ${response.status}). Please try again.`, 'error');
       }
     } catch (error) {
-      showToast('Message sent! I will get back to you soon.', 'success');
-      form.reset();
-      inputs.forEach(input => input.closest('.form-group')?.classList.remove('error'));
+      showToast('Could not send your message. Check your connection and try again.', 'error');
     }
   });
 });
