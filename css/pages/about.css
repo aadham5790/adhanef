@@ -1,5 +1,17 @@
+.about-banner {
+  padding: calc(var(--header-h) + 1.5rem) 0 0;
+}
+
+.about-banner-img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+}
+
 .about-hero {
-  padding: calc(var(--header-h) + 3rem) 0 3rem;
+  padding: 2rem 0 3rem;
   text-align: center;
 }
 
