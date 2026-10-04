@@ -84,6 +84,16 @@
   min-width: 0;
 }
 
+/* Odd items (right side): text aligned right toward center */
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
+}
+
+/* Even items (left side): text aligned left toward center */
+.timeline-item:nth-child(even) .timeline-content {
+  text-align: left;
+}
+
 .timeline-year {
   font-size: 0.875rem;
   font-weight: 600;
