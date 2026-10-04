@@ -100,6 +100,19 @@
   margin-top: 0.25rem;
 }
 
+.project-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-meta span:not(.blog-card-category) {
+  color: var(--fg-secondary);
+  font-size: 0.9375rem;
+}
+
 .project-post-cover img {
   width: 100%;
   max-width: 720px;
