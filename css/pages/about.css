@@ -53,19 +53,24 @@
   align-items: center;
 }
 
-.timeline-item:nth-child(even) .timeline-content {
+/* Odd items (1st, 3rd, 5th): marker RIGHT, content LEFT */
+.timeline-item:nth-child(odd) .timeline-marker {
   grid-column: 2;
-  grid-row: 1;
+  text-align: left;
 }
 
+.timeline-item:nth-child(odd) .timeline-content {
+  grid-column: 1;
+}
+
+/* Even items (2nd, 4th): marker LEFT, content RIGHT */
 .timeline-item:nth-child(even) .timeline-marker {
   grid-column: 1;
-  grid-row: 1;
   text-align: right;
 }
 
-.timeline-marker {
-  text-align: left;
+.timeline-item:nth-child(even) .timeline-content {
+  grid-column: 2;
 }
 
 .timeline-year {

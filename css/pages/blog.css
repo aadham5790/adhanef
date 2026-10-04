@@ -118,6 +118,18 @@
   color: var(--fg-muted);
 }
 
+.blog-post-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-meta span:not(.blog-card-category) {
+  color: var(--fg-secondary);
+  font-size: 0.9375rem;
+}
+
 .blog-pagination {
   display: flex;
   gap: 0.5rem;
