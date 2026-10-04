@@ -47,30 +47,41 @@
 .timeline-item {
   position: relative;
   padding: 2rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: flex-start;
   gap: 2rem;
-  align-items: center;
 }
 
-/* Odd items (1st, 3rd, 5th): marker RIGHT, content LEFT */
-.timeline-item:nth-child(odd) .timeline-marker {
-  grid-column: 2;
-  text-align: left;
+/* Odd items (1st, 3rd, 5th): content on RIGHT */
+.timeline-item:nth-child(odd) {
+  justify-content: flex-end;
+  padding-right: calc(50% + 2rem);
+  padding-left: 0;
 }
 
-.timeline-item:nth-child(odd) .timeline-content {
-  grid-column: 1;
+.timeline-item:nth-child(odd) .timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 2.5rem;
+  transform: translateX(-50%);
 }
 
-/* Even items (2nd, 4th): marker LEFT, content RIGHT */
-.timeline-item:nth-child(even) .timeline-marker {
-  grid-column: 1;
-  text-align: right;
+/* Even items (2nd, 4th): content on LEFT */
+.timeline-item:nth-child(even) {
+  justify-content: flex-start;
+  padding-left: calc(50% + 2rem);
+  padding-right: 0;
 }
 
-.timeline-item:nth-child(even) .timeline-content {
-  grid-column: 2;
+.timeline-item:nth-child(even) .timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 2.5rem;
+  transform: translateX(-50%);
+}
+
+.timeline-content {
+  min-width: 0;
 }
 
 .timeline-year {
@@ -92,15 +103,12 @@
 }
 
 .timeline-dot {
-  position: absolute;
-  left: 50%;
-  top: 2.5rem;
   width: 12px;
   height: 12px;
   background: var(--accent);
   border-radius: 50%;
-  transform: translateX(-50%);
   box-shadow: 0 0 0 4px var(--bg-primary), 0 0 0 6px var(--accent);
+  flex-shrink: 0;
 }
 
 .skills-grid {
