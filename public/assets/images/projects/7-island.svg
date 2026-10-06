@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#1a1a2e"/>
+  <path d="M300 180 L300 280" stroke="#00d4aa" stroke-width="6"/>
+  <path d="M300 180 Q250 150 200 180 Q250 210 300 180" fill="#00d4aa" opacity="0.8"/>
+  <path d="M300 220 Q350 190 400 220 Q350 250 300 220" fill="#00d4aa" opacity="0.6"/>
+  <rect x="0" y="400" width="600" height="200" fill="#00d4aa" opacity="0.2"/>
+  <text x="300" y="520" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="24" font-weight="600">Island Diary</text>
+</svg>

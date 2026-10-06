@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#1a1a2e"/>
+  <path d="M0 300 Q200 250 400 300 T800 300 V450 H0 Z" fill="#00d4aa" opacity="0.3"/>
+  <path d="M0 350 Q200 300 400 350 T800 350 V450 H0 Z" fill="#00d4aa" opacity="0.5"/>
+  <circle cx="400" cy="180" r="80" fill="#00d4aa" opacity="0.8"/>
+  <path d="M400 80 L400 120" stroke="#00d4aa" stroke-width="6"/>
+  <path d="M320 120 Q400 80 480 120 Q400 160 320 120" fill="#00d4aa" opacity="0.9"/>
+  <text x="400" y="420" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="28" font-weight="600">Morning Routine and Creative Energy</text>
+</svg>

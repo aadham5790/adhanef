@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#1a1a2e"/>
+  <circle cx="300" cy="200" r="80" fill="#00d4aa" opacity="0.9"/>
+  <path d="M0 450 Q150 400 300 450 T600 450 V600 H0 Z" fill="#00d4aa" opacity="0.3"/>
+  <path d="M0 480 Q150 430 300 480 T600 480 V600 H0 Z" fill="#00d4aa" opacity="0.5"/>
+  <text x="300" y="520" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="24" font-weight="600">Maldives Sunset</text>
+</svg>

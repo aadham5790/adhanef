@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#1a1a2e"/>
+  <path d="M200 140 L600 140 L600 200 L200 200 Z" fill="#00d4aa" opacity="0.3"/>
+  <path d="M240 200 L240 320" stroke="#00d4aa" stroke-width="10" stroke-linecap="round"/>
+  <path d="M400 200 L400 320" stroke="#00d4aa" stroke-width="10" stroke-linecap="round"/>
+  <path d="M560 200 L560 320" stroke="#00d4aa" stroke-width="10" stroke-linecap="round"/>
+  <path d="M180 320 L260 320 L260 280 L180 280 Z" fill="#00d4aa" opacity="0.6"/>
+  <path d="M380 320 L460 320 L460 280 L380 280 Z" fill="#00d4aa" opacity="0.6"/>
+  <path d="M540 320 L620 320 L620 280 L540 280 Z" fill="#00d4aa" opacity="0.6"/>
+  <text x="400" y="420" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="28" font-weight="600">Tools I Actually Use</text>
+</svg>

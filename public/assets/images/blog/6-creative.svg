@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#1a1a2e"/>
+  <path d="M320 100 L320 280" stroke="#00d4aa" stroke-width="8"/>
+  <path d="M280 140 L320 100 L360 140 L360 240 L280 240 Z" fill="#00d4aa" opacity="0.4"/>
+  <path d="M300 160 L320 120 L340 160 L340 220 L300 220 Z" fill="#00d4aa" opacity="0.6"/>
+  <path d="M440 160 Q480 120 520 160 Q480 200 440 160" fill="#00d4aa" opacity="0.5"/>
+  <path d="M520 200 Q560 160 600 200 Q560 240 520 200" fill="#00d4aa" opacity="0.4"/>
+  <circle cx="350" cy="340" r="30" fill="none" stroke="#00d4aa" stroke-width="4"/>
+  <text x="400" y="420" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="28" font-weight="600">Creative Block and How I Break It</text>
+</svg>
